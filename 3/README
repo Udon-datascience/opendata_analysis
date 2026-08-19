@@ -1,5 +1,6 @@
 【フォルダ概要】
-
+パキスタンのEコマース注文データセットを用いて統計解析を行った。
+データセットには商品ID、注文状況(完了、キャンセル、返金)、注文日、SKU、価格、数量、総計、カテゴリ、支払い方法、顧客IDが含まれている。
 
 【データの前処理における留意事項】
 
@@ -14,3 +15,4 @@
 
 
 【出典】
+https://www.kaggle.com/datasets/zusmani/pakistans-largest-ecommerce-dataset?resource=download
