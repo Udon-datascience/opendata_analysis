@@ -2,7 +2,7 @@
     "type": "MySQLNotebook",
     "version": "1.0",
     "caption": "DB Notebook",
-    "content": "\\about\nSHOW DATABASES;\nUSE pakistan_ecommerce;\nSHOW TABLES;\nSELECT COUNT(*)\nFROM ecommerce_orders;\n",
+    "content": "\\about\n-- Pakistan Ecommerce Dataset\n-- SQL analysis\n\n-- 使用するデータベースを選択\nUSE pakistan_ecommerce;\n\n\n-- データベース内のテーブルを確認\nSHOW TABLES;\n\n\n-- データ件数を確認\nSELECT COUNT(*)\nFROM ecommerce_orders;\n\n\n-- データを確認\nSELECT *\nFROM ecommerce_orders\nLIMIT 10;\n",
     "options": {
         "tabSize": 4,
         "indentSize": 4,
@@ -15,22 +15,22 @@
             {
                 "inSelectionMode": false,
                 "selectionStart": {
-                    "lineNumber": 7,
-                    "column": 1
+                    "lineNumber": 14,
+                    "column": 16
                 },
                 "position": {
-                    "lineNumber": 7,
-                    "column": 1
+                    "lineNumber": 14,
+                    "column": 16
                 }
             }
         ],
         "viewState": {
             "scrollLeft": 0,
             "firstPosition": {
-                "lineNumber": 2,
+                "lineNumber": 5,
                 "column": 1
             },
-            "firstPositionDeltaTop": 128
+            "firstPositionDeltaTop": -13
         },
         "contributionsState": {
             "editor.contrib.folding": {},
@@ -53,7 +53,7 @@
                         }
                     ]
                 },
-                "currentHeight": 119,
+                "currentHeight": 119.5,
                 "currentSet": 1,
                 "statements": [
                     {
@@ -72,154 +72,62 @@
         {
             "state": {
                 "start": 2,
-                "end": 2,
+                "end": 21,
                 "language": "mysql",
                 "result": {
                     "type": "resultIds",
                     "list": [
-                        "e71d244f-08ae-4c80-fc0d-6b63846eb9ac"
+                        "0f59af9f-5fd3-43ac-ab36-889646086cd5",
+                        "ce21c4cd-f319-4bfe-9919-f956a5caad7e",
+                        "4ffaff36-aa17-4671-cf2a-d63f36721aef",
+                        "31f1801e-d8a2-4d2c-8fb4-90ffc51274cd"
                     ]
                 },
-                "currentHeight": 217,
-                "currentSet": 1,
+                "currentHeight": 352,
+                "currentSet": 3,
                 "statements": [
                     {
                         "delimiter": ";",
                         "span": {
                             "start": 0,
-                            "length": 15
+                            "length": 87
                         },
-                        "contentStart": 0,
+                        "contentStart": 64,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 87,
+                            "length": 34
+                        },
+                        "contentStart": 109,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 121,
+                            "length": 53
+                        },
+                        "contentStart": 136,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 174,
+                            "length": 53
+                        },
+                        "contentStart": 187,
                         "state": 0
                     }
                 ]
             },
             "data": [
                 {
-                    "tabId": "9806c050-83b3-44ba-cd24-60bd33fcf63e",
-                    "resultId": "e71d244f-08ae-4c80-fc0d-6b63846eb9ac",
-                    "rows": [
-                        {
-                            "0": "information_schema"
-                        },
-                        {
-                            "0": "mysql"
-                        },
-                        {
-                            "0": "pakistan_ecommerce"
-                        },
-                        {
-                            "0": "performance_schema"
-                        },
-                        {
-                            "0": "sys"
-                        },
-                        {
-                            "0": "test_db"
-                        }
-                    ],
-                    "columns": [
-                        {
-                            "title": "Database",
-                            "field": "0",
-                            "dataType": {
-                                "type": 17,
-                                "characterMaximumLength": 65535,
-                                "flags": [
-                                    "BINARY",
-                                    "ASCII",
-                                    "UNICODE"
-                                ],
-                                "needsQuotes": true,
-                                "parameterFormatType": "OneOrZero"
-                            },
-                            "inPK": false,
-                            "nullable": false,
-                            "autoIncrement": false
-                        }
-                    ],
-                    "executionInfo": {
-                        "text": "OK, 6 records retrieved in 3.193ms"
-                    },
-                    "totalRowCount": 6,
-                    "hasMoreRows": false,
-                    "currentPage": 0,
-                    "index": 0,
-                    "sql": "SHOW DATABASES",
-                    "updatable": false
-                }
-            ]
-        },
-        {
-            "state": {
-                "start": 3,
-                "end": 3,
-                "language": "mysql",
-                "result": {
-                    "type": "text",
-                    "text": [
-                        {
-                            "type": 2,
-                            "index": 0,
-                            "resultId": "7b6ef1c5-dbf1-4eb8-f63b-8130e82b6947",
-                            "content": "OK, 0 records retrieved in 1.454ms"
-                        }
-                    ]
-                },
-                "currentHeight": 28,
-                "currentSet": 1,
-                "statements": [
-                    {
-                        "delimiter": ";",
-                        "span": {
-                            "start": 0,
-                            "length": 23
-                        },
-                        "contentStart": 0,
-                        "state": 0
-                    }
-                ]
-            },
-            "data": []
-        },
-        {
-            "state": {
-                "start": 4,
-                "end": 4,
-                "language": "mysql",
-                "result": {
-                    "type": "resultIds",
-                    "list": [
-                        "e537b7c0-cb2a-4a93-f026-1f590dbd6fd6"
-                    ]
-                },
-                "currentHeight": 92,
-                "currentSet": 1,
-                "statements": [
-                    {
-                        "delimiter": ";",
-                        "span": {
-                            "start": 0,
-                            "length": 12
-                        },
-                        "contentStart": 0,
-                        "state": 0
-                    },
-                    {
-                        "delimiter": ";",
-                        "span": {
-                            "start": 12,
-                            "length": 0
-                        },
-                        "contentStart": 11,
-                        "state": 3
-                    }
-                ]
-            },
-            "data": [
-                {
-                    "tabId": "9806c050-83b3-44ba-cd24-60bd33fcf63e",
-                    "resultId": "e537b7c0-cb2a-4a93-f026-1f590dbd6fd6",
+                    "tabId": "1fa9bff4-108c-4890-83c1-1351b30d40f4",
+                    "resultId": "0f59af9f-5fd3-43ac-ab36-889646086cd5",
                     "rows": [
                         {
                             "0": "ecommerce_orders"
@@ -246,46 +154,18 @@
                         }
                     ],
                     "executionInfo": {
-                        "text": "OK, 1 record retrieved in 11.387ms"
+                        "text": "OK, 1 record retrieved in 4.571ms"
                     },
                     "totalRowCount": 1,
                     "hasMoreRows": false,
                     "currentPage": 0,
-                    "index": 0,
-                    "sql": "SHOW TABLES",
+                    "index": 1,
+                    "sql": "\n\n\n-- データベース内のテーブルを確認\nSHOW TABLES",
                     "updatable": false
-                }
-            ]
-        },
-        {
-            "state": {
-                "start": 5,
-                "end": 6,
-                "language": "mysql",
-                "result": {
-                    "type": "resultIds",
-                    "list": [
-                        "642a5854-b2d8-4669-e287-367a457ab6d1"
-                    ]
                 },
-                "currentHeight": 92,
-                "currentSet": 1,
-                "statements": [
-                    {
-                        "delimiter": ";",
-                        "span": {
-                            "start": 0,
-                            "length": 38
-                        },
-                        "contentStart": 0,
-                        "state": 0
-                    }
-                ]
-            },
-            "data": [
                 {
-                    "tabId": "9806c050-83b3-44ba-cd24-60bd33fcf63e",
-                    "resultId": "642a5854-b2d8-4669-e287-367a457ab6d1",
+                    "tabId": "1fa9bff4-108c-4890-83c1-1351b30d40f4",
+                    "resultId": "ce21c4cd-f319-4bfe-9919-f956a5caad7e",
                     "rows": [
                         {
                             "0": 1048575
@@ -314,22 +194,698 @@
                         }
                     ],
                     "executionInfo": {
-                        "text": "OK, 1 record retrieved in 236.026ms"
+                        "text": "OK, 1 record retrieved in 308.924ms"
                     },
                     "totalRowCount": 1,
                     "hasMoreRows": false,
                     "currentPage": 0,
-                    "index": 0,
-                    "sql": "SELECT COUNT(*)\nFROM ecommerce_orders",
+                    "index": 2,
+                    "sql": "\n\n\n-- データ件数を確認\nSELECT COUNT(*)\nFROM ecommerce_orders",
                     "updatable": false,
                     "fullTableName": ""
+                },
+                {
+                    "tabId": "1fa9bff4-108c-4890-83c1-1351b30d40f4",
+                    "resultId": "4ffaff36-aa17-4671-cf2a-d63f36721aef",
+                    "rows": [
+                        {
+                            "0": 211131,
+                            "1": "complete",
+                            "2": "7/1/2016",
+                            "3": "kreations_YI 06-L",
+                            "4": "1950.00",
+                            "5": "1.00",
+                            "6": "1950.00",
+                            "7": "100147443",
+                            "8": "Women's Fashion",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "#REF!",
+                            "14": " 1,950 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 1
+                        },
+                        {
+                            "0": 211133,
+                            "1": "canceled",
+                            "2": "7/1/2016",
+                            "3": "kcc_Buy 2 Frey Air Freshener & Get 1 Kasual Body Spray Free",
+                            "4": "240.00",
+                            "5": "1.00",
+                            "6": "240.00",
+                            "7": "100147444",
+                            "8": "Beauty & Grooming",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "Gross",
+                            "14": " 240 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 2
+                        },
+                        {
+                            "0": 211134,
+                            "1": "canceled",
+                            "2": "7/1/2016",
+                            "3": "Ego_UP0017-999-MR0",
+                            "4": "2450.00",
+                            "5": "1.00",
+                            "6": "2450.00",
+                            "7": "100147445",
+                            "8": "Women's Fashion",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "Gross",
+                            "14": " 2,450 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 3
+                        },
+                        {
+                            "0": 211135,
+                            "1": "complete",
+                            "2": "7/1/2016",
+                            "3": "kcc_krone deal",
+                            "4": "360.00",
+                            "5": "1.00",
+                            "6": "60.00",
+                            "7": "100147446",
+                            "8": "Beauty & Grooming",
+                            "9": "R-FSD-52352",
+                            "10": "300.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "Net",
+                            "14": " 360 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 4
+                        },
+                        {
+                            "0": 211136,
+                            "1": "order_refunded",
+                            "2": "7/1/2016",
+                            "3": "BK7010400AG",
+                            "4": "555.00",
+                            "5": "2.00",
+                            "6": "1110.00",
+                            "7": "100147447",
+                            "8": "Soghaat",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "Valid",
+                            "14": " 1,110 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 5
+                        },
+                        {
+                            "0": 211137,
+                            "1": "canceled",
+                            "2": "7/1/2016",
+                            "3": "UK_Namkino All In One 200 Gms",
+                            "4": "80.00",
+                            "5": "1.00",
+                            "6": "80.00",
+                            "7": "100147448",
+                            "8": "Soghaat",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "Gross",
+                            "14": " 80 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 6
+                        },
+                        {
+                            "0": 211138,
+                            "1": "complete",
+                            "2": "7/1/2016",
+                            "3": "kcc_krone deal",
+                            "4": "360.00",
+                            "5": "1.00",
+                            "6": "60.00",
+                            "7": "100147449",
+                            "8": "Beauty & Grooming",
+                            "9": null,
+                            "10": "300.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "Net",
+                            "14": " 360 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 7
+                        },
+                        {
+                            "0": 211139,
+                            "1": "complete",
+                            "2": "7/1/2016",
+                            "3": "UK_Namkino Mix Nimco 400 Gms",
+                            "4": "170.00",
+                            "5": "1.00",
+                            "6": "170.00",
+                            "7": "100147450",
+                            "8": "Soghaat",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "cod",
+                            "12": "7/1/2016",
+                            "13": "Net",
+                            "14": " 170 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 6
+                        },
+                        {
+                            "0": 211140,
+                            "1": "canceled",
+                            "2": "7/1/2016",
+                            "3": "Apple iPhone 6S 64GB",
+                            "4": "96499.00",
+                            "5": "1.00",
+                            "6": "96499.00",
+                            "7": "100147451",
+                            "8": "Mobiles & Tablets",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "ublcreditcard",
+                            "12": "7/1/2016",
+                            "13": "Gross",
+                            "14": " 96,499 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 8
+                        },
+                        {
+                            "0": 211141,
+                            "1": "canceled",
+                            "2": "7/1/2016",
+                            "3": "Apple iPhone 6S 64GB",
+                            "4": "96499.00",
+                            "5": "1.00",
+                            "6": "96499.00",
+                            "7": "100147452",
+                            "8": "Mobiles & Tablets",
+                            "9": null,
+                            "10": "0.00",
+                            "11": "mygateway",
+                            "12": "7/1/2016",
+                            "13": "Gross",
+                            "14": " 96,499 ",
+                            "15": 2016,
+                            "16": 7,
+                            "17": "2016-7",
+                            "18": "7-2016",
+                            "19": "FY17",
+                            "20": 8
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "item_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 5,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 20,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INT8",
+                                    "SERIAL"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "status",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "created_at",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "sku",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "price",
+                            "field": "4",
+                            "dataType": {
+                                "type": 10,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 65,
+                                "numericScale": 30,
+                                "parameterFormatType": "TwoOrOneOrZero",
+                                "synonyms": [
+                                    "FIXED",
+                                    "NUMERIC",
+                                    "DEC"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "qty_ordered",
+                            "field": "5",
+                            "dataType": {
+                                "type": 10,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 65,
+                                "numericScale": 30,
+                                "parameterFormatType": "TwoOrOneOrZero",
+                                "synonyms": [
+                                    "FIXED",
+                                    "NUMERIC",
+                                    "DEC"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "grand_total",
+                            "field": "6",
+                            "dataType": {
+                                "type": 10,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 65,
+                                "numericScale": 30,
+                                "parameterFormatType": "TwoOrOneOrZero",
+                                "synonyms": [
+                                    "FIXED",
+                                    "NUMERIC",
+                                    "DEC"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "increment_id",
+                            "field": "7",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "category_name_1",
+                            "field": "8",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "sales_commission_code",
+                            "field": "9",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "discount_amount",
+                            "field": "10",
+                            "dataType": {
+                                "type": 10,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 65,
+                                "numericScale": 30,
+                                "parameterFormatType": "TwoOrOneOrZero",
+                                "synonyms": [
+                                    "FIXED",
+                                    "NUMERIC",
+                                    "DEC"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "payment_method",
+                            "field": "11",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "working_date",
+                            "field": "12",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "bi_status",
+                            "field": "13",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "mv",
+                            "field": "14",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "year",
+                            "field": "15",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "month",
+                            "field": "16",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "customer_since",
+                            "field": "17",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "m_y",
+                            "field": "18",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "fy",
+                            "field": "19",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "customer_id",
+                            "field": "20",
+                            "dataType": {
+                                "type": 5,
+                                "flags": [
+                                    "UNSIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 20,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INT8",
+                                    "SERIAL"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 10 records retrieved in 1.836ms"
+                    },
+                    "totalRowCount": 10,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 3,
+                    "sql": "\n\n\n-- データを確認\nSELECT *\nFROM ecommerce_orders\nLIMIT 10",
+                    "updatable": false,
+                    "fullTableName": "ecommerce_orders"
+                },
+                {
+                    "tabId": "1fa9bff4-108c-4890-83c1-1351b30d40f4",
+                    "resultId": "31f1801e-d8a2-4d2c-8fb4-90ffc51274cd",
+                    "rows": [],
+                    "columns": [
+                        {
+                            "title": "*",
+                            "field": "0",
+                            "dataType": {
+                                "type": 0
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 0 records retrieved in 2.165ms"
+                    },
+                    "totalRowCount": 0,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "-- Pakistan Ecommerce Dataset\n-- SQL analysis\n\n-- 使用するデータベースを選択\nUSE pakistan_ecommerce",
+                    "updatable": false
                 }
             ]
         },
         {
             "state": {
-                "start": 7,
-                "end": 7,
+                "start": 22,
+                "end": 22,
                 "language": "mysql",
                 "currentSet": 1,
                 "statements": [
