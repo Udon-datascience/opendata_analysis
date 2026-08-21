@@ -2,7 +2,7 @@
     "type": "MySQLNotebook",
     "version": "1.0",
     "caption": "DB Notebook",
-    "content": "\\about\nSHOW DATABASES\nSELECT *\nFROM pakistan_ecommerce;\n\n\nSELECT COUNT(*)\nFROM orders;\n",
+    "content": "\\about\nSHOW DATABASES;\nUSE pakistan_ecommerce;\nSHOW TABLES;\nSELECT COUNT(*)\nFROM ecommerce_orders;\n",
     "options": {
         "tabSize": 4,
         "indentSize": 4,
@@ -15,11 +15,11 @@
             {
                 "inSelectionMode": false,
                 "selectionStart": {
-                    "lineNumber": 9,
+                    "lineNumber": 7,
                     "column": 1
                 },
                 "position": {
-                    "lineNumber": 9,
+                    "lineNumber": 7,
                     "column": 1
                 }
             }
@@ -27,10 +27,10 @@
         "viewState": {
             "scrollLeft": 0,
             "firstPosition": {
-                "lineNumber": 1,
+                "lineNumber": 2,
                 "column": 1
             },
-            "firstPositionDeltaTop": 0
+            "firstPositionDeltaTop": 128
         },
         "contributionsState": {
             "editor.contrib.folding": {},
@@ -77,7 +77,7 @@
                 "result": {
                     "type": "resultIds",
                     "list": [
-                        "4621c749-f61f-4813-9631-1ae0505de03f"
+                        "e71d244f-08ae-4c80-fc0d-6b63846eb9ac"
                     ]
                 },
                 "currentHeight": 217,
@@ -87,17 +87,17 @@
                         "delimiter": ";",
                         "span": {
                             "start": 0,
-                            "length": 14
+                            "length": 15
                         },
                         "contentStart": 0,
-                        "state": 3
+                        "state": 0
                     }
                 ]
             },
             "data": [
                 {
-                    "tabId": "d3b7f288-5ec4-4329-ee51-cb78228edc92",
-                    "resultId": "4621c749-f61f-4813-9631-1ae0505de03f",
+                    "tabId": "9806c050-83b3-44ba-cd24-60bd33fcf63e",
+                    "resultId": "e71d244f-08ae-4c80-fc0d-6b63846eb9ac",
                     "rows": [
                         {
                             "0": "information_schema"
@@ -139,7 +139,7 @@
                         }
                     ],
                     "executionInfo": {
-                        "text": "OK, 6 records retrieved in 4.293ms"
+                        "text": "OK, 6 records retrieved in 3.193ms"
                     },
                     "totalRowCount": 6,
                     "hasMoreRows": false,
@@ -153,21 +153,18 @@
         {
             "state": {
                 "start": 3,
-                "end": 6,
+                "end": 3,
                 "language": "mysql",
                 "result": {
                     "type": "text",
                     "text": [
                         {
-                            "type": 0,
+                            "type": 2,
                             "index": 0,
-                            "content": "MySQL Error (1046): No database selected",
-                            "language": "ansi"
+                            "resultId": "7b6ef1c5-dbf1-4eb8-f63b-8130e82b6947",
+                            "content": "OK, 0 records retrieved in 1.454ms"
                         }
-                    ],
-                    "executionInfo": {
-                        "text": ""
-                    }
+                    ]
                 },
                 "currentHeight": 28,
                 "currentSet": 1,
@@ -176,7 +173,34 @@
                         "delimiter": ";",
                         "span": {
                             "start": 0,
-                            "length": 33
+                            "length": 23
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 4,
+                "end": 4,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "e537b7c0-cb2a-4a93-f026-1f590dbd6fd6"
+                    ]
+                },
+                "currentHeight": 92,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 12
                         },
                         "contentStart": 0,
                         "state": 0
@@ -184,55 +208,128 @@
                     {
                         "delimiter": ";",
                         "span": {
-                            "start": 33,
-                            "length": 2
+                            "start": 12,
+                            "length": 0
                         },
-                        "contentStart": 32,
+                        "contentStart": 11,
                         "state": 3
                     }
                 ]
             },
-            "data": []
-        },
-        {
-            "state": {
-                "start": 7,
-                "end": 8,
-                "language": "mysql",
-                "result": {
-                    "type": "text",
-                    "text": [
+            "data": [
+                {
+                    "tabId": "9806c050-83b3-44ba-cd24-60bd33fcf63e",
+                    "resultId": "e537b7c0-cb2a-4a93-f026-1f590dbd6fd6",
+                    "rows": [
                         {
-                            "type": 0,
-                            "index": 0,
-                            "content": "MySQL Error (1046): No database selected",
-                            "language": "ansi"
+                            "0": "ecommerce_orders"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "Tables_in_pakistan_ecommerce",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
                         }
                     ],
                     "executionInfo": {
-                        "text": ""
-                    }
+                        "text": "OK, 1 record retrieved in 11.387ms"
+                    },
+                    "totalRowCount": 1,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SHOW TABLES",
+                    "updatable": false
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 5,
+                "end": 6,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "642a5854-b2d8-4669-e287-367a457ab6d1"
+                    ]
                 },
-                "currentHeight": 28,
+                "currentHeight": 92,
                 "currentSet": 1,
                 "statements": [
                     {
                         "delimiter": ";",
                         "span": {
                             "start": 0,
-                            "length": 28
+                            "length": 38
                         },
                         "contentStart": 0,
                         "state": 0
                     }
                 ]
             },
-            "data": []
+            "data": [
+                {
+                    "tabId": "9806c050-83b3-44ba-cd24-60bd33fcf63e",
+                    "resultId": "642a5854-b2d8-4669-e287-367a457ab6d1",
+                    "rows": [
+                        {
+                            "0": 1048575
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "COUNT(*)",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 1 record retrieved in 236.026ms"
+                    },
+                    "totalRowCount": 1,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT COUNT(*)\nFROM ecommerce_orders",
+                    "updatable": false,
+                    "fullTableName": ""
+                }
+            ]
         },
         {
             "state": {
-                "start": 9,
-                "end": 9,
+                "start": 7,
+                "end": 7,
                 "language": "mysql",
                 "currentSet": 1,
                 "statements": [
