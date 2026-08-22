@@ -1,0 +1,69 @@
+'''
+＜分析の流れ＞
+
+SQLによりデータベースの前処理
+↓
+pandasによりデータの前処理
+↓
+統計解析
+'''
+
+'''
+SQLによりデータベースの前処理をする。
+'''
+
+import pandas as pd
+
+#SQLとの連携
+from getpass import getpass
+from sqlalchemy import create_engine, text
+
+password = getpass("MySQL password: ")
+engine = create_engine(
+    f"mysql+pymysql://root:{password}@localhost/pakistan_ecommerce"
+)
+
+query = """
+-- 使用するデータベースを選択
+USE pakistan_ecommerce;
+"""
+with engine.begin() as conn:
+    result = conn.execute(text(query))
+
+query = """
+-- データベース内のテーブルを確認
+SHOW TABLES;
+"""
+df = pd.read_sql(query, engine)
+display(df)
+
+query = """
+-- データ件数を確認
+SELECT COUNT(*)
+FROM ecommerce_orders;
+"""
+df = pd.read_sql(query, engine)
+display(df)
+
+query = """
+-- データを確認
+SELECT *
+FROM ecommerce_orders
+LIMIT 10;
+"""
+df = pd.read_sql(query, engine)
+display(df)
+
+#SQLでの処理を切り上げ、テーブルをデータフレームに変更
+query = """
+SELECT *
+FROM ecommerce_orders
+"""
+df = pd.read_sql(query, engine)
+
+
+
+
+
+
+
